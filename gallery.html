@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - TravelEase</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+ 
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">Travel With<span> Qasim</span></div>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  
+  <section class="page-banner">
+    <div class="container">
+      <h1>Travel Gallery</h1>
+      <p>Click any photo to view it larger</p>
+    </div>
+  </section>
+
+  
+  <section>
+    <div class="container">
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80" alt="Snow-capped mountain peak" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" alt="Calm blue lake surrounded by mountains" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="Green valley with a winding river" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=800&q=80" alt="City skyline at sunset" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80" alt="Mountain range under a clear sky" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Sun rising over layered mountains" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1441716844725-09cedc13a4e7?auto=format&fit=crop&w=800&q=80" alt="Forest covered hills in fog" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=800&q=80" alt="Historic tourist attraction building" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="modal-overlay" id="imageModal">
+    <div class="modal-box image-modal-box">
+      <button class="modal-close" id="imageModalClose">&times;</button>
+      <img id="imageModalPic" src="" alt="" />
+    </div>
+  </div>
+
+  
+  <footer>
+    <div class="container">
+      <p>Travel With Qasim &mdash; Your Journey, Our Responsibility</p>
+      <p>&copy; 2026 Travel With Qasim. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

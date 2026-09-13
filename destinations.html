@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destinations - TravelEase</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">Travel With<span> Qasim</span></div>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html" class="active">Destinations</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  
+  <section class="page-banner">
+    <div class="container">
+      <h1>Our Destinations</h1>
+      <p>Pick a place, click "View Details" and start planning</p>
+    </div>
+  </section>
+
+  
+  <section>
+    <div class="container">
+      <div class="cards-grid">
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=800&q=80" alt="Green Hunza Valley surrounded by snow-capped mountains" />
+          <div class="card-content">
+            <h3>Hunza Valley</h3>
+            <p>Tall peaks, apple orchards and friendly local culture.</p>
+            <div class="card-info">
+              <span>5 Days</span>
+              <span>PKR 45,000</span>
+            </div>
+            <button class="btn view-details-btn" data-destination="hunza">View Details</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80" alt="Turquoise lake in Skardu surrounded by mountains" />
+          <div class="card-content">
+            <h3>Skardu</h3>
+            <p>Lakes, cold deserts and base camps for the highest mountains.</p>
+            <div class="card-info">
+              <span>6 Days</span>
+              <span>PKR 50,000</span>
+            </div>
+            <button class="btn view-details-btn" data-destination="skardu">View Details</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80" alt="Green mountain landscape near Naran valley" />
+          <div class="card-content">
+            <h3>Naran</h3>
+            <p>Home to Lake Saiful Muluk and lush green scenery.</p>
+            <div class="card-info">
+              <span>4 Days</span>
+              <span>PKR 30,000</span>
+            </div>
+            <button class="btn view-details-btn" data-destination="naran">View Details</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="Pine forest covered hills of Murree" />
+          <div class="card-content">
+            <h3>Murree</h3>
+            <p>A cool hill town close to Islamabad with pine forests.</p>
+            <div class="card-info">
+              <span>2 Days</span>
+              <span>PKR 15,000</span>
+            </div>
+            <button class="btn view-details-btn" data-destination="murree">View Details</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai city skyline with modern skyscrapers" />
+          <div class="card-content">
+            <h3>Dubai</h3>
+            <p>Skyscrapers, desert safaris and world-class shopping.</p>
+            <div class="card-info">
+              <span>5 Days</span>
+              <span>PKR 150,000</span>
+            </div>
+            <button class="btn view-details-btn" data-destination="dubai">View Details</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=800&q=80" alt="Historic mosque skyline of Istanbul" />
+          <div class="card-content">
+            <h3>Istanbul</h3>
+            <p>A historic city with mosques, bazaars and Bosphorus views.</p>
+            <div class="card-info">
+              <span>6 Days</span>
+              <span>PKR 180,000</span>
+            </div>
+            <button class="btn view-details-btn" data-destination="istanbul">View Details</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+ 
+  <div class="modal-overlay" id="destinationModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <img id="modalImage" src="" alt="" />
+      <div class="modal-details">
+        <h2 id="modalName"></h2>
+        <p id="modalDescription"></p>
+        <p><span>Duration:</span> <span id="modalDuration"></span></p>
+        <p><span>Price:</span> <span id="modalPrice"></span></p>
+      </div>
+    </div>
+  </div>
+
+  
+  <footer>
+    <div class="container">
+      <p>Travel With Qasim &mdash; Your Journey, Our Responsibility</p>
+      <p>&copy; 2026 Travel With Qasim. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
